@@ -11,11 +11,11 @@ public class ExampleReactiveService {
 
   public Mono<String> Saludo() {
 
-    return Mono.just("HOLA sincrono").delayElement(Duration.ofSeconds(3));
+    return Mono.just("HOLA sincrono").delayElement(Duration.ofSeconds(5));
   }
 
   public Mono<String> Adios() {
-    return Mono.just("Adios sincrono").delayElement(Duration.ofSeconds(3));
+    return Mono.just("Adios sincrono").delayElement(Duration.ofSeconds(2));
 
   }
 
